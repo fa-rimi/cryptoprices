@@ -3,11 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+// renaming browser router to router by using "as"
+// using this to create multiple components/pages
+import { BrowserRouter as Router} from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    {/* Wrapping App component inside router: Router is parent component and App is children */}
+    <Router>
     <App />
+    </Router>
   </React.StrictMode>
 );
 
