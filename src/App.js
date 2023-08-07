@@ -8,7 +8,7 @@ import Nav from "./components/Nav";
 
 function App() {
   return (
-    <div className="App">
+    <div className="w-screen h-screen flex flex-col">
       {/* We want to render navbar outside of routes because we want it to be visible at all time */}
       <Nav />
       <Routes>
