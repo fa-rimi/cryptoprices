@@ -15,7 +15,7 @@ export default function Price(props) {
   // pass in symbol = ${symbol}
   // pass in default currency display = /USD
   // pass apiKey = ?apikey=${apiKey}
-  const url = `http://rest.coinapi.io/v1/exchangerate/${symbol}/USD?apikey=${process.env.REACT_APP_COINAPI_KEY}`;
+  const url = `https://rest.coinapi.io/v1/exchangerate/${symbol}/USD?apikey=${process.env.REACT_APP_COINAPI_KEY}`;
   // API Key can be found in .env.local file
 
   //function to fetch coin data
